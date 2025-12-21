@@ -15,13 +15,14 @@ CREATE TABLE responsables_equipos(
 CREATE TABLE equipos(
 	id_equipo INT AUTO_INCREMENT,
     id_responsable INT NOT NULL,
+    nombre VARCHAR(50) NOT NULL,
 	PRIMARY KEY (id_equipo),
     FOREIGN KEY (id_responsable) REFERENCES responsables_equipos(id_responsable)
 );
 
 CREATE TABLE jugadores(
 	id_jugador INT AUTO_INCREMENT,
-	id_equipo INT NOT NULL UNIQUE,
+	id_equipo INT NOT NULL,
     nombre VARCHAR(50) NOT NULL,
     apellido VARCHAR(50) NOT NULL,
     dni INT NOT NULL,
@@ -117,7 +118,7 @@ CREATE TABLE partidos(
 
 CREATE TABLE resultado_partidos(
 	id_resultado INT AUTO_INCREMENT,
-    id_partido INT NOT NULL,
+    id_partido INT NOT NULL UNIQUE,
     id_figura_partido INT,
     goles_local INT NOT NULL,
     goles_visitante INT NOT NULL,
