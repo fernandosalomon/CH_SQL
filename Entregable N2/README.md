@@ -1,4 +1,4 @@
-# Entregable N°1 - Curso SQL - CoderHouse
+# Entregable N°2 - Curso SQL - CoderHouse
 
 ### Comisión 81860
 
@@ -25,5 +25,5 @@ Los **objetivos específicos** son:
 * Implementar consultas que permitan obtener información útil, como fixture, resultados, tabla de posiciones y estadísticas básicas.
 * Centralizar la información del torneo para reducir errores, duplicaciones y confusiones propias de la gestión manual.
 
-## **Más información en el archivo Salomon - Entregable N1 - SQL.pdf**
+## **Más información en el archivo Entrega2\_Salomon.pdf**
 
